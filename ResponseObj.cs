@@ -6,19 +6,16 @@ namespace APIVerve
 {
 public class images
 {
-    [JsonProperty("src")]
-    public string src { get; set; }
-
     [JsonProperty("external")]
     public bool external { get; set; }
+
+    [JsonProperty("src")]
+    public string src { get; set; }
 
 }
 
 public class data
 {
-    [JsonProperty("url")]
-    public string url { get; set; }
-
     [JsonProperty("imageCount")]
     public int imageCount { get; set; }
 
@@ -27,6 +24,9 @@ public class data
 
     [JsonProperty("maxLinksReached")]
     public bool maxLinksReached { get; set; }
+
+    [JsonProperty("url")]
+    public string url { get; set; }
 
 }
 
